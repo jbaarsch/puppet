@@ -9,3 +9,8 @@ cron { 'run-puppet':
   hour    => '*',
   minute  => '*/15',
 }
+
+file { '/tmp/hello.txt':
+   source => 'home/Documents/',
+   mode => '0777',
+}
